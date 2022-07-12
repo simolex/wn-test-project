@@ -44,60 +44,68 @@ return [
     */
 
     'connections' => [
-
         'sqlite' => [
-            'driver'                  => 'sqlite',
+            'driver' => 'sqlite',
+
             // 'url'                  => env('DATABASE_URL'),
+
             'database' => env('DB_DATABASE', 'D:\\OpenServer\\domains\\winter\\storage/database.sqlite'),
-            'prefix'                  => '',
+            'prefix' => '',
             'foreign_key_constraints' => true,
         ],
-
         'mysql' => [
-            'driver'         => 'mysql',
+            'driver' => 'mysql',
+
             // 'url'         => env('DATABASE_URL'),
-            'engine'         => 'InnoDB',
+
+            'engine' => 'InnoDB',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', 3306),
             'database' => env('DB_DATABASE', 'database'),
             'username' => env('DB_USERNAME', ''),
             'password' => env('DB_PASSWORD', ''),
-            'charset'        => 'utf8mb4',
-            'collation'      => 'utf8mb4_unicode_ci',
-            'prefix'         => '',
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
             'prefix_indexes' => true,
-            'strict'         => true,
-            'varcharmax'     => 191,
+            'strict' => true,
+            'varcharmax' => 191,
         ],
-
         'pgsql' => [
-            'driver'         => 'pgsql',
+            'driver' => 'pgsql',
+
             // 'url'         => env('DATABASE_URL'),
+
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', 5432),
             'database' => env('DB_DATABASE', 'database'),
             'username' => env('DB_USERNAME', ''),
             'password' => env('DB_PASSWORD', ''),
-            'charset'        => 'utf8',
-            'prefix'         => '',
+            'charset' => 'utf8',
+            'prefix' => '',
             'prefix_indexes' => true,
-            'schema'         => 'public',
-            'sslmode'        => 'prefer',
+            'schema' => 'public',
+            'sslmode' => 'prefer',
         ],
-
         'sqlsrv' => [
-            'driver'         => 'sqlsrv',
+            'driver' => 'sqlsrv',
+
             // 'url'         => env('DATABASE_URL'),
+
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', 5432),
             'database' => env('DB_DATABASE', 'database'),
             'username' => env('DB_USERNAME', ''),
             'password' => env('DB_PASSWORD', ''),
-            'charset'        => 'utf8',
-            'prefix'         => '',
+            'charset' => 'utf8',
+            'prefix' => '',
             'prefix_indexes' => true,
         ],
-
+        'redis' => [
+            'host' => env('REDIS_HOST', null),
+            'password' => env('REDIS_PASSWORD', ''),
+            'port' => env('REDIS_PORT', null),
+        ],
     ],
 
     /*
@@ -125,22 +133,19 @@ return [
     */
 
     'redis' => [
-
         'client' => 'predis',
-
         'options' => [
             'cluster' => 'redis',
-            'prefix'  => '',
+            'prefix' => '',
         ],
-
         'default' => [
+
             // 'url'   => env('REDIS_URL'),
+
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
             'port' => env('REDIS_PORT', 6379),
             'database' => 0,
         ],
-
     ],
-
 ];

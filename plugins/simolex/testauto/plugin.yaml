@@ -1,0 +1,6 @@
+plugin:
+    name: 'simolex.testauto::lang.plugin.name'
+    description: 'simolex.testauto::lang.plugin.description'
+    author: simolex
+    icon: wn-icon-automobile
+    replaces: {  }

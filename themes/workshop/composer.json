@@ -1,0 +1,31 @@
+{
+    "name": "winter/wn-workshop-theme",
+    "description": "TailwindCSS-built theme for testing core plugins",
+    "type": "winter-theme",
+    "homepage": "https://github.com/wintercms/wn-workshop-theme",
+    "keywords": ["winter cms", "winter", "theme", "workshop", "plugin", "testing"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Thomson",
+            "email": "git@alfreido.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Winter CMS Maintainers",
+            "homepage": "https://wintercms.com",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/wintercms/wn-workshop-theme/issues",
+        "discord": "https://discord.gg/D5MFSPH6Ux",
+        "source": "https://github.com/wintercms/wn-workshop-theme"
+    },
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "workshop"
+    }
+}
